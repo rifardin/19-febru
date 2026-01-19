@@ -1,3 +1,74 @@
-body{
-    background-color: aqua;
+*{
+    padding: 0 ;
+    margin: 0 ;
+    box-sizing: border-box;
+}
+
+.inter-font{
+    font-family: "Inter", sans-serif ;
+    font-optical-sizing: auto;
+}
+
+/* shared styles */
+.btn{
+    background: linear-gradient(90deg, #F7E93F 0%, #FB09B4 51%, #9100F8 100%);
+    padding: 1rem;
+    color: #FFFFFF;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 1rem;
+    border-color: none;
+    border: none ;
+}
+header{
+    background-color: #1A0B2E;
+}
+.tech{
+    color: #FFFFFF;
+    font-weight: bolder;
+    font-size: 2rem;
+}
+.wave{
+     background: linear-gradient(360deg, #F7E93F 0%, #FB09B4 51%, #9100F8 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+     font-weight: bolder;
+    font-size: 2rem;  
+}
+
+
+
+
+
+
+
+
+
+/* main styles */
+
+nav{
+    max-width: 1600px ;
+    margin: 0 auto ;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2.28rem 0 ;  
+}
+nav ul{
+    display: flex;
+    gap: 2rem;
+}
+nav li{
+    list-style: none;  
+}
+
+nav a{
+    text-decoration: none;
+    color: #FFFFFF;
+    font-size: 1rem ;
+    line-height: 120%;
+    font-weight: 500;  
+}
+.hr-nav{
+    padding: 10px;
 }
