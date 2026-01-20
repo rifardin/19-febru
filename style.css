@@ -333,6 +333,7 @@ iframe{
 /* host code */
 #host{
     background-color: #1A0B2E ;
+    padding-bottom: 7.5rem;
 }
 .host-content h2{
     text-align: center;
@@ -386,7 +387,48 @@ iframe{
     padding: 5px;
 }
 
+/* footer styles */
+    #foot{
+        text-align: center;
+        margin: 0 auto;
+        background-image: url(./assets/footer-bg.png);
+        padding-top: 7.5rem;
+        padding-bottom: 7.5rem;  
+    }
+    #foot .tech{
+        font-size: 5rem;
+        font-weight:  bolder;   
+    }
+    #foot .wave{
+        font-size: 5rem;
+        font-weight: bolder ;
+    }
+    .foot-logo{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 2.5rem;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+    }
+    .foot-logo span{
+        color: #FFFFFF;
+        font-size: 1rem;
+        font-weight: 500;
+    }
 
+    #foot h6{
+        font-size: 1rem;
+        font-weight: 400;
+        line-height: 1.5rem;
+        color: #FAFAFA ;
+    }
+    .item{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
 
 @media screen and (max-width:576px) {
     nav ul, .btn{
@@ -437,8 +479,11 @@ iframe{
     .host-card .james{
         /* right: 50%; */
         width: 80%;
-        margin-left: 15px;
-        
+        margin-left: 15px;  
+    }
+    .foot-logo{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
     }
 
 }
