@@ -95,16 +95,16 @@ header hr{
 }
 
 .circle-img{
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
+  width: 95%;
+  height: 90%;
+  /* object-fit: contain; */
 }
 .mic-img{
   position: absolute;
   top: 60%;
-  left: 50%;
+  left: 48%;
   transform: translate(-50%, -50%);
-  width: 6rem;
+  width: 7rem;
 }
 .new-badge{
   position: absolute;
@@ -202,16 +202,21 @@ header hr{
     padding-bottom: 7.5rem;
 }
 .card{
-  border: 1px solid palevioletred;
+  gap: 20px;
 }
-.card h1{
+#podcast .card h1{
     font-size: 3rem;
     font-weight: bold ;
-    color: #00ff88;
-    /* display: none; */   
+    color: #00ff88;   
+}
+#podcast .card p{
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 20px;
+    color: #FFFFFF;
 }
 #span{
-    background-color:#230E3D ;
+    background:#230e3d ;
     padding-top: 7.5rem; 
 
 }
@@ -228,13 +233,16 @@ header hr{
     gap: 1.9rem;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    padding-bottom: 7.5rem;
     
 }
 .span-card{
+    border: 2px solid magenta;
+    display: block;
     border-radius: 2.5rem;
     padding: 2.5rem 2.5rem;
-    color: #351165 ;
-    box-shadow: 0 4px 4px 0  #0000003f ;
+    background-color: #3511650e ;
+    box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.055), -10px -10px 5px 0px rgba(0, 0, 0, 0.075)
 }
 .span-card h1{
     font-size: 1.5rem;
@@ -257,6 +265,68 @@ header hr{
 .long{
     grid-column: span 2;
 }
+#y-video{
+   text-align: center;
+    background: #1A0B2E;
+    padding-top: 7.5rem;
+}
+
+#y-video h1 {
+     margin-bottom: 2.5rem;
+     font-size: 2rem;
+     font-weight: 700;
+     color: #FFFFFF;
+}
+.video-info{
+    margin: 0 1.5rem;
+    /* border: 1px solid navajowhite; */
+}
+.video-info h2{
+    margin-top: 1.25rem;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #FFFFFF;
+}
+.video-info p{
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5rem;
+    margin: 12px 0 ;
+    color: #FFFFFF;
+}
+.clock p {
+    margin-bottom: 1.5rem;
+    margin-right: 1.5rem;
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 1.5rem;
+    color: #00FF88;
+
+}
+.clock{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+.clock img{
+    max-width: 20px;
+    max-height: 20px;
+}
+.video-cont{
+    max-width: 1200px;
+    margin: 0 auto ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.9rem;
+}
+.video-card{
+    /* border: 1px solid sienna; */
+    /* border-radius: 5.5rem; */
+    
+
+}
 
 
 
@@ -273,11 +343,33 @@ header hr{
 
     .logo-circle{
         /* margin-bottom: 20px; */
+        max-width: 200px;
     }
-    .span-container{
+    .span-container, .video-cont {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
-        padding: 20px 20px ;
+        /* padding: 20px 20px ; */
+    }
+  
+    .span-card{
+        /* padding: 0 ; */
+        /* display: block; */
+        margin: 0 30px;
+    }
+    .card-container{
+
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    #podcast h1, p{
+        padding: 0 15px;
+        /* margin: 0 15px; */
+    }
+    .mic-img{
+        max-width: 50px;
+        position: absolute;
+        /* right: 50%; */
+        top: 65%;
     }
 
 
