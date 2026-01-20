@@ -19,8 +19,21 @@
     border-radius: 10000px;
     border-color: none;
     border: none ;
+    cursor: pointer;
+    transition: transform 0.1s ease;
 }
-
+.btn:active, .spot:active, .msz:active{
+    transform: translate(30px, 30px);
+}
+.btn:hover{
+     background: linear-gradient(90deg, #3ff776 0%, #09fb82 51%, #00f867 100%);
+}
+.spot:hover{
+    background: linear-gradient(90deg, #3ff776 0%, #09fb82 51%, #00f867 100%);
+}
+.msz:hover{
+    background-color: rgb(5, 43, 7);
+}
 
 
 
@@ -40,10 +53,10 @@ header{
 }
 .wave{
      background: linear-gradient(360deg, #F7E93F 0%, #FB09B4 51%, #9100F8 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+     -webkit-background-clip: text;
+     -webkit-text-fill-color: transparent;
      font-weight: bolder;
-    font-size: 2rem;  
+     font-size: 2rem;  
 }
 nav{
     max-width: 1600px ;
@@ -88,7 +101,6 @@ header hr{
 .logo-circle{
   position: relative; 
   max-width: 450px;
-  /* max-height: ; */
   margin: 0 auto;
   padding-top: 101px ;
  
@@ -145,9 +157,11 @@ header hr{
     color: #FFFFFF;
     font-size: 1rem;
     font-weight: 600;  
-    gap: 8px ;                           
+    gap: 8px ;  
+    cursor: pointer;                         
 }
 .msz{
+    cursor: pointer;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -237,7 +251,7 @@ header hr{
     
 }
 .span-card{
-    border: 2px solid magenta;
+    /* border: 2px solid magenta; */
     display: block;
     border-radius: 2.5rem;
     padding: 2.5rem 2.5rem;
@@ -392,6 +406,9 @@ iframe{
         text-align: center;
         margin: 0 auto;
         background-image: url(./assets/footer-bg.png);
+        /* background-position: center; */
+        background-size: 100% 90%;
+        /* background-repeat: no-repeat; */
         padding-top: 7.5rem;
         padding-bottom: 7.5rem;  
     }
@@ -443,7 +460,7 @@ iframe{
 
     .logo-circle{
         /* margin-bottom: 20px; */
-        max-width: 200px;
+        max-width: 250px;
     }
     .span-container, .video-cont {
         display: grid;
@@ -460,10 +477,6 @@ iframe{
 
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-    }
-    #podcast h1, p{
-        /* padding: 0 15px; */
-        /* margin: 0 15px; */
     }
     .mic-img{
         max-width: 50px;
